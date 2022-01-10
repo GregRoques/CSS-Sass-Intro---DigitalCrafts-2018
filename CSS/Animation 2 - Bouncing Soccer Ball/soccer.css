@@ -1,0 +1,37 @@
+body{
+    margin:0;
+    background-color:green;
+}
+
+.soccerField{
+    position:absolute;
+    padding:1rem;
+    width: 100vw;
+    height: 100vh;
+}
+
+.soccerBall{
+    position: absolute;
+    width: 100px;
+    bottom: 0;
+    right: 1rem;
+    /* 
+        z-index: 2; 
+        //if needed to position above other elements
+    */
+    animation: bounce 3s;
+    animation-iteration-count: infinite;
+}
+
+.soccerBall IMG{
+    width:inherit;
+    height:inherit;
+}
+
+@keyframes bounce{
+    0%{ bottom:0 }
+    25%{ bottom:4rem }
+    50%{ bottom:0 }
+    75%{ bottom:2rem } 
+    100%{ bottom:0 }
+}
